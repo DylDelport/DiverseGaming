@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+p {
+    font-size: 14px;
+}
+
+/* ========== Generic CSS ========== */
+.section-title {
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+.section-title h2 {
+    position: relative;
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.section-title h2:after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 60px;
+    height: 1px;
+    background-color: #EE5D28; 
+    margin-left: -30px;
+}
+.section-title p{
+    color: #333;
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 45px;    
+}
+
+/* ========== Header ========== */
+.header {
+    background-image: url("../images/header-bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+.header-overlay {
+    background-color: rgba(31,31,31,0.75);
+}
+.logo {
+    padding-top: 150px;
+}
+.logo img{
+    width: 25%;
+    height: 25%;
+}
+.header-text h1 {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 45px;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+.header-btns {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.btn-joinus,
+.btn-joinus:focus,
+.btn-joinus:active,
+.btn-joinus:visited
+{
+    background: rgb(255,255,255, 0.1);
+    border-color: #EE5D28;
+    color: #EE5D28;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;  
+    transition: all 1s;
+}
+.btn-joinus:hover {
+    background-color: #EE5D28;
+    color: #fff;
+}
+
+.btn-takealook,
+.btn-takealook:focus,
+.btn-takealook:active,
+.btn-takealook:visited
+{
+    color: #A9AD80;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 500;
+    background: transparent;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.btn-takealook:hover {
+    color: #fff;
+}
+.btn-takealook i {
+    font-size: 20px;
+    padding-left: 5px;
+    color: #EE5D28;
+}
+
+/* ========== About Us ========== */
+.join-us-wrapper {
+    padding-top: 50px;
+}
+.join-us-title {
+    padding-bottom: 50px;
+}
+.join-us-title h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 37px;
+    position: relative;
+}
+.join-us-title h2:after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 70px;
+    height: 1px;
+    background-color: #EE5D28;
+}
+.join-us-title p{
+    margin-top: 40px;
+    font-size: 19px;
+    line-height: 24px;    
+}
+.join-us-item {
+    position: relative;
+    padding-bottom: 4px;
+    padding-left: 80px;
+    padding-right: 10px;
+}
+.join-us-item div{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.join-us-item div i {
+    font-size: 65px;
+    color: #EE5D28;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.join-us-item h3{
+    color: #343434;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+}
+.join-us-item p {
+    color: #727272;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
