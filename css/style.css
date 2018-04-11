@@ -13,7 +13,7 @@ p {
 
 /* ========== Generic CSS ========== */
 .section-title {
-    padding-top: 90px;
+    padding-top: 150px;
     padding-bottom: 50px;
 }
 .section-title h2 {
@@ -65,7 +65,7 @@ p {
     height: 25%;
 }
 .header-text h1 {
-    color: #fff;
+    color: #FFFFFF;
     font-size: 35px;
     font-weight: 300;
     line-height: 45px;
@@ -74,7 +74,7 @@ p {
 }
 .header-btns {
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 
 .btn-joinus,
@@ -99,7 +99,7 @@ p {
 }
 .btn-joinus:hover {
     background-color: #EE5D28;
-    color: #fff;
+    color: #FFFFFF;
 }
 
 .btn-takealook,
@@ -119,7 +119,7 @@ p {
     -o-transition: all 1s;
 }
 .btn-takealook:hover {
-    color: #fff;
+    color: #FFFFFF;
 }
 .btn-takealook i {
     font-size: 20px;
@@ -128,52 +128,12 @@ p {
 }
 
 /* ========== About Us ========== */
-.about-us-wrapper {
-    background-color: #404040;    
+.about-us-wrapper { 
+    background-color: #282828;  
 }
-.join-us-wrapper {
-    padding-top: 50px;
-    background-color: #1a1a1a;
-}
-.join-us-title {
-    padding-bottom: 50px;
-}
-.join-us-title h2 {
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 37px;
-    position: relative;
-    color: #fff;
-}
-.join-us-title h2:after {
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    width: 70px;
-    height: 1px;
-    background-color: #EE5D28;
-}
-.join-us-title p{
-    margin-top: 40px;
-    font-size: 19px;
-    line-height: 24px; 
-    color: #dfdfdf;
-}
-.join-us-item {
-    position: relative;
-    padding-bottom: 4px;
-    padding-left: 100px;
-    padding-right: 10px;
-}
-.join-us-item div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-}
-.join-us-item div i {
+.about-us-item i {
+    margin-top: 25px;
+    padding-bottom: 30px;
     font-size: 65px;
     color: #EE5D28;
     transition: all 1s;
@@ -181,15 +141,36 @@ p {
     -moz-transition: all 1s;
     -o-transition: all 1s;
 }
-.join-us-item h3{
-    color: #D8D8D8;
+.item-icon:after {
+    border: 1px;
+}
+.about-us-item h3 {
     text-transform: uppercase;
+    line-height: 37px;
+    position: relative;
+    color: #D8D8D8;
     font-size: 20px;
     font-weight: 800;
 }
-.join-us-item p {
+.about-us-item h3:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    width: 60px;
+    height: 1px;
+    background-color: #EE5D28;
+    margin-left: -30px;
+}
+.about-us-item {
+    position: relative;
+    padding-bottom: 4px;
+    padding-right: 10px;
+}
+.about-us-item p {
     color: #B5B5B5;
     font-size: 15px;
+    line-height: 22px;
 }
 
 
