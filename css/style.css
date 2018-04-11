@@ -19,7 +19,7 @@ p {
 .section-title h2 {
     position: relative;
     text-align: center;
-    color: #333;
+    color: #fff;
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
@@ -35,7 +35,7 @@ p {
     margin-left: -30px;
 }
 .section-title p{
-    color: #333;
+    color: #dfdfdf;
     font-size: 19px;
     line-height: 28px;
     font-weight: 300;
@@ -128,8 +128,12 @@ p {
 }
 
 /* ========== About Us ========== */
+.about-us-wrapper {
+    background-color: #404040;    
+}
 .join-us-wrapper {
     padding-top: 50px;
+    background-color: #1a1a1a;
 }
 .join-us-title {
     padding-bottom: 50px;
@@ -140,6 +144,7 @@ p {
     font-size: 30px;
     line-height: 37px;
     position: relative;
+    color: #fff;
 }
 .join-us-title h2:after {
     content: "";
@@ -153,18 +158,20 @@ p {
 .join-us-title p{
     margin-top: 40px;
     font-size: 19px;
-    line-height: 24px;    
+    line-height: 24px; 
+    color: #dfdfdf;
 }
 .join-us-item {
     position: relative;
     padding-bottom: 4px;
-    padding-left: 80px;
+    padding-left: 100px;
     padding-right: 10px;
 }
 .join-us-item div{
     position: absolute;
     top: 0;
     left: 0;
+    text-align: center;
 }
 .join-us-item div i {
     font-size: 65px;
@@ -175,13 +182,13 @@ p {
     -o-transition: all 1s;
 }
 .join-us-item h3{
-    color: #343434;
+    color: #D8D8D8;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 800;
 }
 .join-us-item p {
-    color: #727272;
+    color: #B5B5B5;
     font-size: 15px;
 }
 
