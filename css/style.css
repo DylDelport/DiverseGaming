@@ -13,7 +13,7 @@ p {
 
 /* ========== Generic CSS ========== */
 .section-title {
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 50px;
 }
 .section-title h2 {
@@ -42,10 +42,14 @@ p {
     text-align: center;
     margin-top: 45px;    
 }
+.section-footer {
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
 
 /* ========== Header ========== */
 .header {
-    background-image: url("../images/header-bg.jpg");
+    background-image: url("../images/dark_spots1.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -55,7 +59,7 @@ p {
     -webkit-background-size: cover;
 }
 .header-overlay {
-    background-color: rgba(31,31,31,0.75);
+    background-color: rgba(0,0,0,0.75);
 }
 .logo {
     padding-top: 150px;
@@ -128,21 +132,30 @@ p {
 }
 
 /* ========== About Us ========== */
-.about-us-wrapper { 
-    background-color: #282828;  
+.about-us { 
+    background: linear-gradient(#424242, #282828, #424242);
 }
-.about-us-item i {
-    margin-top: 25px;
-    padding-bottom: 30px;
-    font-size: 65px;
+.about-us-item-icon{
+    max-width: 65px;  
+    font-size: 50px;
     color: #EE5D28;
     transition: all 1s;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s;
 }
-.item-icon:after {
-    border: 1px;
+.about-us-icon-wrapper {
+    display: inline-block;
+    text-align: center;
+    height: 145px;
+    width: 145px;
+    line-height: 145px;
+    border-radius: 50%;
+    font-size: 32px;
+    background-color: #424242;
+    position: relative;
+    text-decoration: none;
+    outline: 0;
 }
 .about-us-item h3 {
     text-transform: uppercase;
@@ -164,7 +177,6 @@ p {
 }
 .about-us-item {
     position: relative;
-    padding-bottom: 4px;
     padding-right: 10px;
 }
 .about-us-item p {
@@ -173,11 +185,212 @@ p {
     line-height: 22px;
 }
 
+/* ========== How To Join ========== */
+.how-to-join{
+    background-image: url("../images/keyboard2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    
+}
+.how-to-join-overlay{
+    background: rgb(0,0,0,.8); 
+}
+.htj-process-item-left, .htj-process-item-right {
+    text-align: center;
+    color: #fff;
+}
+.row.register .htj-process-item-left {
+    padding-top: 50px;
+}
+.row.register .htj-process-icon {
+    padding-top: 50px;
+}
+.htj-process-icon {
+    text-align: center;
+    padding-bottom: 100px;
+}
+.htj-process-icon:after{
+    content:"";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 3px dotted #fff;
+    transform: translate(-50%);
+}
+.icon-wrapper {
+    z-index: 2;
+    display: inline-block;
+    text-align: center;
+    height: 145px;
+    width: 145px;
+    line-height: 145px;
+    border-radius: 5%;
+    border: 1px solid;
+    font-size: 32px;
+    border-color: #EE5D28;
+    background-color: #282828;
+    position: relative;
+    text-decoration: none;
+    outline: 0;
+}
+.item-icon{
+    max-width: 65px;  
+    font-size: 50px;
+    color: #EE5D28;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.row.join .htj-process-icon {
+    padding-bottom: 50px;
+}
 
+/* ========== Membership ========== */
+.membership {
+    background: linear-gradient(#424242, #282828, #424242);
+    background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;    
+}
+.counter-item {
+    font-size: 30px;
+    color: #fff;
+    padding-top: 50px;
+}
+.counter-item h2 {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #D7DADB;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 1px; 
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+}
+.counter-item p {
+    color: #D7DADB;
+    font-size: 26px;
+    margin-top: 0px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", sans-serif;    
+    text-align: center;
+}
 
+/* ========== Twitch Streams ========== */
+.twitch-streams {
+    background: url("/images/twitchbackground.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+.twitch-streams-overlay {
+    background-color: rgba(0, 0, 0, .7);
+}
+#twitch-MainPlayer {
+    text-align: center;
+}
+#twitch-MainPlayer::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -285px; 
+    height: 285px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
 
+.twitch-live-streamer ul {
+    padding-top: 20px;
+    text-align: center;
+}
+.twitch-live-streamer li {
+    display: inline-block;
+    margin: 5px;
+    width: 100px;
+    vertical-align: top;
+    height: 80px;
+    text-align: center;
+    position: relative;
+}
+.twitch-live-streamer img {
+    position: absolute;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
+/* ========== Streamer Carousel ========== */
+.streamers {
+    background: linear-gradient(#424242, #282828, #424242);
+    background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;    
+}
+.carousel-indicators {
+    bottom: -10px;
+}
+.carousel-inner .carousel-item img {
+    border: 2px solid #EE5D28;
+    border-radius: 50%;
+    padding: 3px;
+    width: 200px;
+    height: 200px;
+}
+.streamer-caption {
+    padding-bottom: 70px;
+}
+.streamer-caption h2 {
+    color: #EE5D28;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 25px;
+}
+.streamer-caption h4 {
+    color: #EE5D28;
+    font-style: italic;
+    font-weight: 300;
+}
+.streamer-caption h4 span{
+    color: #dfdfdf;
+    font-style: normal;
+}
+.streamer-caption p {
+    color: #D8D8D8;
+    font-size: 18px;
+    line-height: 27px;
+    padding-top: 50px;
+}
 
-
+/* ========== Games We Play ========== */
+.games-we-play {
+    background: linear-gradient(#424242, #282828, #424242);
+    background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;    
+}
+.poster {
+    height: 200;
+}
 
 

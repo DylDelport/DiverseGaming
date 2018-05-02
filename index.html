@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, inital-scale=1">
         
         <!-- Bootstrap -->
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
         
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -32,12 +32,11 @@
     <body>
         
         <!-- Header -->
-        <header class="header">
-        
-            <div class="header-overlay">
-            
+        <header class="header">        
+            <div class="header-overlay">            
                 <div class="container">
                 
+                    <!-- Header Logo -->
                     <div class="row">
                     
                         <div class="col-md-12">
@@ -53,6 +52,7 @@
                     
                     </div>
                     
+                    <!-- Header Title -->
                     <div class="row">
                     
                         <div class="col-md-12">
@@ -68,8 +68,8 @@
                                 
                                 <!-- Header Buttons -->
                                 <a class="btn btn-joinus" href="#">Join Us</a>
-                                <a class="btn btn-takealook" href="#">
-                                    Take a Look
+                                <a class="btn btn-takealook" href="#twitch-MainPlayer">
+                                    Live Streams
                                     <i class="fa fa-angle-down"></i>
                                 </a>
                             
@@ -79,22 +79,19 @@
                     
                     </div>
                     
-                </div>
-            
-            </div>
-        
+                </div>            
+            </div>        
         </header>    
         
         <!-- About Us -->
-        <section>
-            
-            <div class="about-us-wrapper">
-                
+        <section class="about-us">
+            <div class="about-us-overlay">
                 <div class="container">
 
+                    <!-- Section Title -->
                     <div class="row">
 
-                        <div class="col-md-8 col-md-offset-2">
+                        <div class="col-md-10 offset-md-1">
 
                             <!-- About us Title & Description -->
                             <div class="section-title">
@@ -108,82 +105,787 @@
                                                                  
                     </div>    
                     
+                    <!-- Section Content -->
                     <div class="row">
                          
+                        <!-- About us item 1 -->
                         <div class="col-md-3 text-center">
                         
-                                <!-- About us item 1 -->
-                                <div class="about-us-item">
-                                    
-                                    <!-- About us item icon -->
-                                    <i class="fa fa-heartbeat item-icon"></i>
-                                    
-                                    <!-- About us item title and description -->
-                                    <h3>ACTIVE</h3>
-                                    <p>Lipsum Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque lacus dui, interdum sit amet varius a, cursus sit amet sapien. Donec eu placerat nisi.</p>
-                                    
-                                </div>
+                            <div class="about-us-item">
+
+                                <!-- About us item icon -->
+                                <span class="about-us-icon-wrapper"><i class="fa fa-heartbeat about-us-item-icon"></i></span>
+
+                                <!-- About us item title and description -->
+                                <h3>ACTIVE</h3>
+                                <p>Lipsum Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque lacus dui, interdum sit amet varius a, cursus sit amet sapien. Donec eu placerat nisi.</p>
+
+                            </div>
                             
                         </div>
                         
+                        <!-- About us item 2 -->
                         <div class="col-md-3 text-center">
-                                <!-- About us item 2 -->
-                                <div class="about-us-item">
-                                    
-                                    <!-- About us item icon -->
-                                    <i class="far fa-calendar-alt item-icon"></i>
-                                    
-                                    <!-- About us item title and description -->
-                                    <h3>GIVEAWAYS & EVENTS</h3>
-                                    <p>Diso Lipsum Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque lacus dui, interdum sit amet varius a, cursus sit amet sapien. Donec eu placerat nisi.</p>
-                                    
-                                </div>
+                            
+                            <div class="about-us-item">
+
+                                <!-- About us item icon -->
+                                <span class="about-us-icon-wrapper"><i class="far fa-calendar-alt about-us-item-icon"></i></span>
+
+                                <!-- About us item title and description -->
+                                <h3>GIVEAWAYS & EVENTS</h3>
+                                <p>Diso Lipsum Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque lacus dui, interdum sit amet varius a, cursus sit amet sapien. Donec eu placerat nisi.</p>
+
+                            </div>
                             
                         </div>
                         
+                        <!-- About us item 3 -->
                         <div class="col-md-3 text-center">
                                 
-                                <!-- About us item 3 -->
-                                <div class="about-us-item">
-                                    
-                                    <!-- About us item icon -->
-                                    <i class="fa fa-users item-icon"></i>
-                                    
-                                    <!-- About us item title and description -->
-                                    <h3>GROWING MEMBERSHIP</h3>
-                                    <p>Sed ut perspiciatis Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.unde omnis iste natus error sit</p>
-                                    
-                                </div>
+                            <div class="about-us-item">
+
+                                <!-- About us item icon -->
+                                <span class="about-us-icon-wrapper"><i class="fa fa-users about-us-item-icon"></i></span>
+
+                                <!-- About us item title and description -->
+                                <h3>GROWING MEMBERSHIP</h3>
+                                <p>Sed ut perspiciatis Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.unde omnis iste natus error sit</p>
+
+                            </div>
                             
                         </div>
                         
+                        <!-- About us item 4 -->
                         <div class="col-md-3 text-center">
                                 
-                                <!-- About us item 4 -->
-                                <div class="about-us-item">
-                                    
-                                    <!-- Join us item icon -->
-                                    <i class="fa fa-people-carry item-icon"></i>
-                                    
-                                    <!-- Join us item title and description -->
-                                    <h3>Clean Environment</h3>
-                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque lacus dui, interdum sit amet varius.</p>
-                            
-                                </div>
+                            <div class="about-us-item">
+
+                                <!-- Join us item icon -->
+                                <span class="about-us-icon-wrapper"><i class="fa fa-people-carry about-us-item-icon"></i></span>
+
+                                <!-- Join us item title and description -->
+                                <h3>Clean Environment</h3>
+                                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque lacus dui, interdum sit amet varius.</p>
+
+                            </div>
                             
                         </div>
                     
                     </div>
 
-                </div>                        
-            
+                    <!-- Section Footer -->
+                    <div class="row">
+                        
+                        <div class="col-md-12">
+                        
+                            <div class="section-footer"></div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>            
             </div>
-        
         </section>
         
-        <!-- Bootstrap Javscript -->
+        <!-- How To Join -->
+        <section class="how-to-join">        
+            <div class="how-to-join-overlay">            
+                <div class="container">
+                    
+                    <!-- Section Title -->
+                    <div class="row">
+                    
+                        <div class="col-md-10 offset-md-1">
+
+                            <!-- How To Join Title & Description -->
+                            <div class="section-title">
+
+                                <h2>How To Join?</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
+                    
+                    <!-- HTJ Register -->
+                    <div class="row register">
+                    
+                        <!-- HTJ Process 2 Text -->
+                        <div class="col-md-3 offset-md-2">
+
+                            <!-- HTJ Process 1 -->
+                            <div class="htj-process-item-left">
+
+                                <!-- About us item title and description -->
+                                <h3>Register</h3>
+                                <p>Sed ut perspiciatis Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.unde omnis iste natus error sit</p>
+
+                                
+                            </div>
+                            
+                        </div>
+                        
+                        <!-- HTJ Process 2 Text -->
+                        <div class="col-md-2">
+
+                            <!-- HTJ Process 1 Icon -->
+                            <div class="htj-process-icon">
+
+                                <!-- About us item icon -->
+                                <span class="icon-wrapper"><i class="fas fa-user-circle item-icon"></i></span>
+                                
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
+                    
+                    <!-- HTJ Applciation -->
+                    <div class="row application">
+                        
+                        <!-- HTJ Process 2 Text -->
+                        <div class="col-md-2 offset-md-5">
+
+                            <div class="htj-process-icon">
+
+                                <!-- About us item icon -->
+                                <span class="icon-wrapper"><i class="far fa-address-card item-icon"></i></span>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                        <!-- HTJ Process 2 Icon -->
+                        <div class="col-md-3">
+                            
+                            <div class="htj-process-item-right">
+
+                                <!-- About us item title and description -->
+                                <h3>Application</h3>
+                                <p>Sed ut perspiciatis Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.unde omnis iste natus error sit</p>
+
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- HTJ Discord -->
+                    <div class="row join">
+                    
+                        <!-- HTJ Process 3 Text -->
+                        <div class="col-md-3 offset-md-2">
+
+                            <div class="htj-process-item-left">
+
+                                <!-- About us item title and description -->
+                                <h3>Discord</h3>
+                                <p>Sed ut perspiciatis Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.unde omnis iste natus error sit</p>
+
+                                
+                            </div>
+                            
+                        </div>
+                        
+                        <!-- HTJ Process 3 Icon -->
+                        <div class="col-md-2">
+
+                            <div class="htj-process-icon">
+
+                                <!-- About us item icon -->
+                                <span class="icon-wrapper"><i class="fab fa-discord item-icon"></i></span>
+                                
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
+                                        
+                    <!-- Section Footer -->
+                    <div class="row">
+                        
+                        <div class="col-md-12">
+                        
+                            <div class="section-footer"></div>
+                            
+                        </div>
+                        
+                    </div>
+            
+                </div>            
+            </div>        
+        </section>
+        
+        <!-- Member Counter -->
+        <section class="membership">        
+            <div class="membership-overlay">            
+                <div class="container">
+                    
+                    <!-- Section Title -->
+                    <div class="row">
+                    
+                        <div class="col-md-10 offset-md-1">
+
+                            <!-- How To Join Title & Description -->
+                            <div class="section-title">
+
+                                <h2>Diverse Gaming in Numbers</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
+                    
+                    <!-- Section Content -->
+                    <div class="row">
+                    
+                        <div class="col-md-3">
+                        
+                            <div class="counter-item">
+                            
+                                <div>
+                                    <i></i>
+                                </div>
+                                
+                                <h2><span id="streamers-num">9</span></h2>
+                                
+                                <p>Streamers</p>
+                            
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="col-md-3">
+                        
+                            <div class="counter-item">
+                            
+                                <div>
+                                    <i></i>
+                                </div>
+                                
+                                <h2><span id="trialists-num">3</span></h2>
+                                
+                                <p>Trialists</p>
+                            
+                            </div>
+                        
+                        </div>
+                        
+                        <div class="col-md-3">
+                        
+                            <div class="counter-item">
+                            
+                                <div>
+                                    <i></i>
+                                </div>
+                                
+                                <h2><span id="members-num">34</span></h2>
+                                
+                                <p>Members</p>
+                            
+                            </div>
+                        
+                        </div>
+                        
+                        <div class="col-md-3">
+                        
+                            <div class="counter-item">
+                            
+                                <div>
+                                    <i></i>
+                                </div>
+                                
+                                <h2><span id="live-num">0</span></h2>
+                                
+                                <p>Currently Streaming</p>
+                            
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+                                        
+                    <!-- Section Footer -->
+                    <div class="row">
+                        
+                        <div class="col-md-12">
+                        
+                            <div class="section-footer"></div>
+                            
+                        </div>
+                        
+                    </div>
+            
+                </div>            
+            </div>            
+        </section>
+        
+        <!-- Twitch Streams -->
+        <section class="twitch-streams">        
+            <div class="twitch-streams-overlay">            
+                <div class="container">
+                    
+                    <!-- Section Title -->
+                    <div class="row">
+                    
+                        <div class="col-md-10 offset-md-1">
+
+                            <!-- How To Join Title & Description -->
+                            <div class="section-title">
+
+                                <h2>Live Streams</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
+                    
+                    <!-- Section Content -->
+                    <div class="row">
+                        
+                        <div class="col-md-12">
+                        
+                            <!-- Twitch embed -->
+                            <div id="twitch-MainPlayer" class="twitch">
+                            </div>
+                            
+                            <div class="twitch-live-streamer">
+                                
+                                <ul>
+                                    
+                                    <!-- DG Channel Logo -->
+                                    <li id="diversegaminglive" data-name="diversegaminglive" class="stream"style=" display: none">
+                                        <a href="#twitch-embed">
+                                            <img src="images/streamer-logo/Diverse2.png" alt="streamer" class="center-block"/>
+                                        </a>
+                                    </li>
+                                    
+                                    <!-- Dunn Logo -->
+                                    <li id="dunn85" data-name="dunn85" class="stream" style="display: none">
+                                        <a href="#twitch-embed">
+                                            <img src="images/streamer-logo/dunn.png" alt="streamer" class="center-block"/>
+                                        </a>
+                                        <p class="live_text">
+                                            Live
+                                        </p>
+                                    </li> 
+                                    <!-- RickSteele Logo -->
+                                    <li id="ricksteeletv" data-name="ricksteeletv" class="stream selected" style="display: none">
+                                        <a href="#twitch-embed">
+                                            <img src="images/streamer-logo/rick.png" alt="streamer" class="center-block"/>
+                                        </a>
+                                        <span class="live_text">
+                                            Live
+                                        </span>
+                                    </li> 
+                                    <!-- Smoggie Logo -->
+                                    <li id="smoggie8" data-name="smoggie8" class="stream" style="display: none">
+                                        <a href="#twitch-embed">
+                                            <img src="images/streamer-logo/smoggie.png" alt="streamer" class="center-block"/>
+                                        </a>
+                                        <span class="live_text">
+                                            Live
+                                        </span>
+                                    </li> 
+                                    <!-- Webbo Logo -->
+                                    <li id="webbo231287" data-name="webbo231287" class="stream" style="display: none">
+                                        <a href="#twitch-embed">
+                                            <img src="images/streamer-logo/webbo.png" alt="streamer" class="center-block"/>
+                                        </a>
+                                        <span class="live_text">
+                                            Live
+                                        </span>
+                                    </li> 
+                                    <!-- Messeh Logo -->
+                                    <li id="messeh" data-name="messeh" class="stream" style="display: none">
+                                        <a href="#twitch-embed">
+                                            <img src="images/streamer-logo/messeh.png" alt="streamer" class="center-block"/>
+                                        </a>
+                                        <span class="live_text">
+                                            Live
+                                        </span>
+                                    </li> 
+                                    <!-- Th3NamesBruce Logo -->
+                                    <li id="th3namesbruce" data-name="th3namesbruce" class="stream" style="display: none">
+                                        <a href="#twitch-embed">
+                                            <img src="images/streamer-logo/bruce.jpg" alt="streamer" class="center-block"/>
+                                        </a>
+                                        <span class="live_text">
+                                            Live
+                                        </span>
+                                    </li> 
+                                    <!-- Pep Logo -->
+                                    <li id="saltnp3p" data-name="saltnp3p" class="stream" style="display: none">
+                                        <a href="#twitch-embed">
+                                            <img src="images/streamer-logo/Pep.png" alt="streamer" class="center-block"/> 
+                                        </a> 
+                                        <span class="live_text">
+                                            Live
+                                        </span>
+                                    </li> 
+                                    <!-- TayTay Logo -->
+                                    <li id="taytay61" data-name="taytay61" class="stream" style="display: none">
+                                        <a href="#twitch-embed">
+                                            <img src="images/streamer-logo/taytay.png" alt="streamer" class="center-block"/> 
+                                        </a> 
+                                        <span class="live_text">
+                                            Live
+                                        </span> 
+                                    </li> 
+                                    <!-- GrandMonk Logo -->
+                                    <li id="grandmonktv" data-name="grandmonktv" class="stream" style="display: none">
+                                        <a href="#twitch-embed">
+                                            <img src="images/streamer-logo/grandmonk.png" alt="streamer" class="center-block"/>
+                                        </a>
+                                        <span class="live_text">
+                                            Live
+                                        </span>
+                                    </li> 
+                                </ul>                              
+                            
+                            </div>
+                        
+                        </div>
+                             
+                    </div>
+                                        
+                    <!-- Section Footer -->
+                    <div class="row">
+                        
+                        <div class="col-md-12">
+                        
+                            <div class="section-footer"></div>
+                            
+                        </div>
+                        
+                    </div>
+            
+                </div>            
+            </div>            
+        </section>
+        
+        <!-- Streamers Carousel -->
+        <section class="streamers">        
+            <div class="streamers-overlay">            
+                <div class="container">
+                
+                    <!-- Section Title -->
+                    <div class="row">
+                    
+                        <div class="col-md-10 offset-md-1">
+
+                            <div class="section-title">
+
+                                <h2>Streamers</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+
+                            </div>                            
+                        </div>                    
+                    </div>
+                    
+                    <!-- Section Content -->
+                    <div class="row">
+                    
+                        <div class="col-md-12">
+                        
+                            <div id="carousel-streamers" class="carousel slide" data-ride="carousel">
+                            
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">                                
+                                    <li data-target="#carousel-streamers" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-streamers" data-slide-to="1"></li>
+                                    <li data-target="#carousel-streamers" data-slide-to="2"></li>
+                                    <li data-target="#carousel-streamers" data-slide-to="3"></li>
+                                    <li data-target="#carousel-streamers" data-slide-to="4"></li>
+                                    <li data-target="#carousel-streamers" data-slide-to="5"></li>
+                                    <li data-target="#carousel-streamers" data-slide-to="6"></li>
+                                    <li data-target="#carousel-streamers" data-slide-to="7"></li>
+                                    <li data-target="#carousel-streamers" data-slide-to="8"></li>
+                                    <li data-target="#carousel-streamers" data-slide-to="9"></li>
+                                    <li data-target="#carousel-streamers" data-slide-to="10"></li>
+                                    <li data-target="#carousel-streamers" data-slide-to="11"></li>
+                                    <li data-target="#carousel-streamers" data-slide-to="12"></li>
+                                </ol>
+                                
+                                <!-- Wrapper for Slides -->
+                                <div class="carousel-inner">
+                                
+                                    <!-- Streamer 1 -->
+                                    <div class="carousel-item active text-center">
+                                        
+                                        <a href="https://www.twitch.tv/dunn85" target="_blank" title="Dunn"><img src="images/streamer-logo/dunn.png" alt="streamer" class="center-block"></a>                                        
+                                        
+                                        <div class="streamer-caption">
+                                        
+                                            <h2>Dunn</h2>
+                                            <h4><span>Aiden, </span>United Kingdom</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+                                            
+                                        </div>                                    
+                                    </div>
+                                    
+                                    <!-- Streamer 2 -->
+                                    <div class="carousel-item text-center">
+                                        
+                                        <a href="https://www.twitch.tv/ricksteeletv" target="_blank" title="RickSteeleTV"><img src="images/streamer-logo/rick.png" alt="streamer" class="center-block"></a>
+                                        
+                                        <div class="streamer-caption">
+                                        
+                                            <h2>RickSteeleTV</h2>
+                                            <h4><span>Rick, </span>United Kingdom</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+                                                                                        
+                                        </div>                                    
+                                    </div>
+                                    
+                                    <!-- Streamer 3 -->
+                                    <div class="carousel-item text-center">
+                                    
+                                        <a href="https://www.twitch.tv/messeh" target="_blank" title="Messeh"><img src="images/streamer-logo/messeh.png" alt="streamer" class="center-block"></a>
+                                        
+                                        <div class="streamer-caption">
+                                        
+                                            <h2>Messeh</h2>
+                                            <h4><span>Matt, </span>United Kingdom</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+                                            
+                                        </div>                                    
+                                    </div>
+                                    
+                                    <!-- Streamer 4 -->
+                                    <div class="carousel-item text-center">
+                                    
+                                        <a href="https://www.twitch.tv/smoggie8" target="_blank" title="Smoggie"><img src="images/streamer-logo/smoggie.png" alt="streamer" class="center-block"></a>
+                                        
+                                        <div class="streamer-caption">
+                                        
+                                            <h2>Smoggie</h2>
+                                            <h4><span>Jon, </span>United Kingdom</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+                                            
+                                        </div>                                    
+                                    </div>
+                                    
+                                    <!-- Streamer 5 -->
+                                    <div class="carousel-item text-center">
+                                        
+                                        <a href="https://www.twitch.tv/webbo231287" target="_blank" title="Webbo"><img src="images/streamer-logo/webbo.png" alt="streamer" class="center-block"></a>
+                                                                                
+                                        <div class="streamer-caption">
+                                        
+                                            <h2>Webbo</h2>
+                                            <h4><span>Neil, </span>United Kingdom</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+                                            
+                                        </div>                                    
+                                    </div>
+                                    
+                                    <!-- Streamer 6 -->
+                                    <div class="carousel-item text-center">
+                                    
+                                        <a href="https://www.twitch.tv/th3namesbruce" target="_blank" title="Bruce"><img src="images/streamer-logo/bruce.jpg" alt="streamer" class="center-block"></a>
+                                        
+                                        <div class="streamer-caption">
+                                        
+                                            <h2>th3namesbruce</h2>
+                                            <h4><span>Jake, </span>United Kingdom</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+                                            
+                                        </div>                                    
+                                    </div>
+                                    
+                                    <!-- Streamer 7 -->
+                                    <div class="carousel-item text-center">
+                                        
+                                        <a href="https://www.twitch.tv/grandmonktv" target="_blank" title="GrandMonkTV"><img src="images/streamer-logo/grandmonk.png" alt="streamer" class="center-block"></a>
+                                                                                
+                                        <div class="streamer-caption">
+                                        
+                                            <h2>GrandMonkTV</h2>
+                                            <h4><span>Chris, </span>United Kingdom</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+                                            
+                                        </div>                                    
+                                    </div>
+                                    
+                                    <!-- Streamer 8 -->
+                                    <div class="carousel-item text-center">
+                                    
+                                        <a href="https://www.twitch.tv/saltnp3p" target="_blank" title="SaltNp3p"><img src="images/streamer-logo/Pep.png" alt="streamer" class="center-block"></a>
+                                                                                
+                                        <div class="streamer-caption">
+                                        
+                                            <h2>SaltNp3p</h2>
+                                            <h4><span>Eric, </span>United Kingdom</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+                                            
+                                        </div>                                    
+                                    </div>
+                                    
+                                    <!-- Streamer 9 -->
+                                    <div class="carousel-item text-center">
+                                    
+                                        <a href="https://www.twitch.tv/taytay61" target="_blank" title="TayTay"><img src="images/streamer-logo/taytay.png" alt="streamer" class="center-block"></a>
+                                        
+                                        <div class="streamer-caption">
+                                        
+                                            <h2>TayTay</h2>
+                                            <h4><span>Ben, </span>United Kingdom</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+                                            
+                                        </div>                                    
+                                    </div> 
+                                    
+                                    <!-- Streamer 10 -->
+                                    <div class="carousel-item text-center">
+                                    
+                                        <a href="https://www.twitch.tv/liamh" target="_blank" title="LiamH"><img src="images/streamer-logo/liam.png" alt="streamer" class="center-block"></a>
+                                        
+                                        <div class="streamer-caption">
+                                        
+                                            <h2>LiamH</h2>
+                                            <h4><span>Liam, </span>United Kingdom</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+                                            
+                                        </div>                                    
+                                    </div>
+                                    
+                                    <!-- Streamer 11 -->
+                                    <div class="carousel-item text-center">
+                                    
+                                        <a href="https://www.twitch.tv/dreamtrip" target="_blank" title="DreamTrip"><img src="images/streamer-logo/dream.png" alt="streamer" class="center-block"></a>
+                                        
+                                        <div class="streamer-caption">
+                                        
+                                            <h2>DreamTrip</h2>
+                                            <h4><span>Antonie, </span>USA</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+                                            
+                                        </div>                                    
+                                    </div>
+                                    
+                                    <!-- Streamer 12 -->
+                                    <div class="carousel-item text-center">
+                                    
+                                        <a href="https://www.twitch.tv/thisisrich_" target="_blank" title="Rich"><img src="images/streamer-logo/rich.png" alt="streamer" class="center-block"></a>
+                                        
+                                        <div class="streamer-caption">
+                                        
+                                            <h2>thisisrich</h2>
+                                            <h4><span>Rich, </span>United Kingdom</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+                                            
+                                        </div>                                    
+                                    </div>
+                                    
+                                    <!-- Streamer 13 -->
+                                    <div class="carousel-item text-center">
+                                    
+                                        <a href="https://www.twitch.tv/fmginge" target="_blank" title="Ginge"><img src="images/streamer-logo/fmginge.png" alt="streamer" class="center-block"></a>
+                                        
+                                        <div class="streamer-caption">
+                                        
+                                            <h2>fmginge</h2>
+                                            <h4><span>Rich, </span>United Kingdom</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+                                            
+                                        </div>                                    
+                                    </div>
+                                </div> 
+                                    
+                                <!-- Controls -->
+                                <a class="carousel-control-prev" href="#carousel-streamers" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel-streamers" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>                            
+                        </div>                        
+                    </div>    
+                
+                    <!-- Section Footer -->
+                    <div class="row">
+                        
+                        <div class="col-md-12">
+                        
+                            <div class="section-footer"></div>
+                            
+                        </div>                          
+                    </div>
+                    
+                </div>            
+            </div>        
+        </section>
+        
+        <!-- Games We Play -->
+        <section class="games-we-play">
+            <div class="games-we-play-overlay">
+                <div class="container">
+                
+                    <!-- Section Title -->
+                    <div class="row">
+                        
+                        <div class="col-md-10 offset-md-1">
+
+                            <!-- Games We Play Title & Description -->
+                            <div class="section-title">
+
+                                <h2>Games We Play</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
+
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                                        
+                    <!-- Section Content Images -->
+                    <div class="row">
+                        
+                        <div class="col-md-12">
+                                                        
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="container-fluid">
+                                                        
+                    <!-- Section Content Images Row 1-->
+                    <div class="row poster-1">
+                        
+                    </div>  
+                    
+                    <!-- Section Content Images Row 2 -->
+                    <div class="row poster-1">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- Bootstrap Javascript -->
         <script src="js/jquery.js"></script>  
-        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        
+        <!-- Custom Javascript -->
+        <script src="js/custom.js"></script>  
+        
+        <!-- Twitch Javascript -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
         
     </body>
     
