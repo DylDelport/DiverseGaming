@@ -47,6 +47,41 @@ p {
     padding-top: 50px;
 }
 
+/* ========== Navigation ========== */
+.nav-full-width {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.navbar-default {
+    background-color: rgba(0,0,0,0.75);
+    border-color: #fff;
+    z-index: 110;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;  
+    transition: all 1s;    
+}
+.navbar-brand img {
+    display: none;
+}
+.brand img {
+    opacity: 1;
+    vertical-align: middle;
+    height: 75px;
+    width: 75px;
+}
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+
 /* ========== Header ========== */
 .header {
     background-image: url("../images/dark_spots1.jpg");
@@ -253,6 +288,65 @@ p {
     padding-bottom: 50px;
 }
 
+/* ========== Games We Play ========== */
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.games {
+    background-color: white;
+}
+
+.games-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+.games-list li {
+    position: relative;
+    display: inline-block;
+    width: 33.3333%;
+    font-size: 14px;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+    .games-list li {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .games-list li {
+        width: 100%;
+    }
+}
+
+.games-list li img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100%;
+    height: auto;
+    min-width: 100%;
+    width: auto;
+    z-index: 0;
+}
+
+.text-wrapper {
+    position: absolute;
+    top: 80%;
+    left: 30px;
+    right: 30px;
+    text-align: center;
+    z-index: 1;
+}
+
+
 /* ========== Membership ========== */
 .membership {
     background: linear-gradient(#424242, #282828, #424242);
@@ -302,10 +396,10 @@ p {
 .twitch-streams-overlay {
     background-color: rgba(0, 0, 0, .7);
 }
-#twitch-MainPlayer {
+#twitch-Player {
     text-align: center;
 }
-#twitch-MainPlayer::before { 
+#twitch-Player::before { 
     display: block; 
     content: " "; 
     margin-top: -285px; 
@@ -338,8 +432,7 @@ p {
 
 /* ========== Streamer Carousel ========== */
 .streamers {
-    background: linear-gradient(#424242, #282828, #424242);
-    background-size: cover;
+    background: linear-gradient(#1D1D1D, #151515);
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -380,17 +473,63 @@ p {
     padding-top: 50px;
 }
 
-/* ========== Games We Play ========== */
-.games-we-play {
-    background: linear-gradient(#424242, #282828, #424242);
-    background-size: cover;
+/* ========== Footer ========== */
+.footer {  
+    padding-top: 100px;
+    padding-bottom: 50px;  
+    background: linear-gradient(#1D1D1D, #151515);
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    -webkit-background-size: cover;    
+    -webkit-background-size: cover;  
 }
-.poster {
-    height: 200;
+#copyright {
+    width: 80%;
 }
-
-
+#copyright p {
+    color: #dfdfdf;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 49px;
+}
+#copyright p a {
+    text-transform: none;
+    color: #EE5D28;
+}
+.social-icons {
+    padding-bottom: 50px;
+}
+.social-icons ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.social-icons ul li {
+    list-style: none;
+    display: inline;
+    padding-left: 10px;
+}
+.social-icons ul li a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #EE5D28;
+    border-radius: 3px;
+    width: 45px;
+    height: 45px;
+    line-height: 49px;
+    color: #EE5D28;
+}
+.social-icons ul li a:hover {
+    background: #EE5D28;
+    border: 1px solid #EE5D28;
+    color: #fff;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;  
+    transition: all 1s;
+}
+.social-icons ul li a i {
+    font-size: 20px;
+}

@@ -32,7 +32,41 @@
     <body>
         
         <!-- Header -->
-        <header class="header">        
+        <header class="header" id="HOME">  
+            
+            <div class="container-fluid nav-full-width">
+                            
+                <!-- Navigation -->
+                <nav class="navbar navbar-default navbar-expand-lg navbar-right">                
+                    
+                    <a class="navbar-brand visible-xs" href="#">
+                        <img src="images/Diverse2.png" alt="logo">
+                    </a>   
+                                        
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dg-navbar-collapse-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>                  
+                    
+                    <div class="collapse navbar-collapse" id="dg-navbar-collapse-1">
+                    
+                        <ul class="navbar-nav">
+                      
+                            <li class="nav-item"><a class="nav-link" href="#HOME">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#ABOUT">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#JOIN">Join</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#STREAMERS">Streamers</a></li>
+                            <li class="nav-item"><a class="brand" href="#HOME"><img src="images/Diverse2.png"></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#LIVE">Live Streams</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#MEMBERSHIP">Membership</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#STAFF">Staff</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#NEWS">News</a></li>                            
+                            
+                        </ul>
+                    </div>   
+                </nav> 
+            
+            </div>      
+            
             <div class="header-overlay">            
                 <div class="container">
                 
@@ -84,7 +118,7 @@
         </header>    
         
         <!-- About Us -->
-        <section class="about-us">
+        <section class="about-us" id="ABOUT">
             <div class="about-us-overlay">
                 <div class="container">
 
@@ -190,7 +224,7 @@
         </section>
         
         <!-- How To Join -->
-        <section class="how-to-join">        
+        <section class="how-to-join" id="JOIN">        
             <div class="how-to-join-overlay">            
                 <div class="container">
                     
@@ -320,8 +354,51 @@
             </div>        
         </section>
         
+        <section class="games">
+            <div class="container-fluid">
+                <ul class="games-list">
+                    <li>
+                        <div class="text-wrapper">
+                            <a class="btn btn-joinus" href="#">Buy Game</a>
+                        </div>
+                        <img src="images/games/cod.jpg" alt="test" />
+                    </li>
+                    <li>
+                        <div class="text-wrapper">
+                            <a class="btn btn-joinus" href="#">Buy Game</a>
+                        </div>
+                        <img src="images/games/csgo.jpg" alt="test" />
+                    </li>
+                    <li>
+                        <div class="text-wrapper">
+                            <a class="btn btn-joinus" href="#">Buy Game</a>
+                        </div>
+                        <img src="images/games/fm.jpg" alt="test" />
+                    </li>
+                    <li>
+                        <div class="text-wrapper">
+                            <a class="btn btn-joinus" href="#">Buy Game</a>
+                        </div>
+                        <img src="images/games/fortnite.jpeg" alt="test" />
+                    </li>
+                    <li>
+                        <div class="text-wrapper">
+                            <a class="btn btn-joinus" href="#">Buy Game</a>
+                        </div>
+                        <img src="images/games/pubg.jpg" alt="test" />
+                    </li>
+                    <li>
+                        <div class="text-wrapper">
+                            <a class="btn btn-joinus" href="#">Buy Game</a>
+                        </div>
+                        <img src="images/games/siege.jpg" alt="test" />
+                    </li>
+                </ul>
+            </div>
+        </section>        
+        
         <!-- Member Counter -->
-        <section class="membership">        
+        <section class="membership" id="MEMBERSHIP">        
             <div class="membership-overlay">            
                 <div class="container">
                     
@@ -353,7 +430,7 @@
                                     <i></i>
                                 </div>
                                 
-                                <h2><span id="streamers-num">9</span></h2>
+                                <h2 id="streamers-num"><span>-</span></h2>
                                 
                                 <p>Streamers</p>
                             
@@ -369,7 +446,7 @@
                                     <i></i>
                                 </div>
                                 
-                                <h2><span id="trialists-num">3</span></h2>
+                                <h2 id="trialists-num"><span>-</span></h2>
                                 
                                 <p>Trialists</p>
                             
@@ -385,7 +462,7 @@
                                     <i></i>
                                 </div>
                                 
-                                <h2><span id="members-num">34</span></h2>
+                                <h2 id="members-num"><span>-</span></h2>
                                 
                                 <p>Members</p>
                             
@@ -401,7 +478,7 @@
                                     <i></i>
                                 </div>
                                 
-                                <h2><span id="live-num">0</span></h2>
+                                <h2 id="live-num"><span>-</span></h2>
                                 
                                 <p>Currently Streaming</p>
                             
@@ -427,7 +504,7 @@
         </section>
         
         <!-- Twitch Streams -->
-        <section class="twitch-streams">        
+        <section class="twitch-streams" id="LIVESTREAMS">        
             <div class="twitch-streams-overlay">            
                 <div class="container">
                     
@@ -436,7 +513,7 @@
                     
                         <div class="col-md-10 offset-md-1">
 
-                            <!-- How To Join Title & Description -->
+                            <!-- Live Streams Title & Description -->
                             <div class="section-title">
 
                                 <h2>Live Streams</h2>
@@ -454,7 +531,8 @@
                         <div class="col-md-12">
                         
                             <!-- Twitch embed -->
-                            <div id="twitch-MainPlayer" class="twitch">
+                            <div id="twitch-Player" class="twitch">
+                                <div id="player" ></div>
                             </div>
                             
                             <div class="twitch-live-streamer">
@@ -469,7 +547,7 @@
                                     </li>
                                     
                                     <!-- Dunn Logo -->
-                                    <li id="dunn85" data-name="dunn85" class="stream" style="display: none">
+                                    <li id="dunn" data-name="dunn85" class="stream" style="display: none">
                                         <a href="#twitch-embed">
                                             <img src="images/streamer-logo/dunn.png" alt="streamer" class="center-block"/>
                                         </a>
@@ -478,7 +556,7 @@
                                         </p>
                                     </li> 
                                     <!-- RickSteele Logo -->
-                                    <li id="ricksteeletv" data-name="ricksteeletv" class="stream selected" style="display: none">
+                                    <li id="ricksteeletv" data-name="ricksteeletv" class="stream" style="display: none">
                                         <a href="#twitch-embed">
                                             <img src="images/streamer-logo/rick.png" alt="streamer" class="center-block"/>
                                         </a>
@@ -573,7 +651,7 @@
         </section>
         
         <!-- Streamers Carousel -->
-        <section class="streamers">        
+        <section class="streamers" id="STREAMERS">        
             <div class="streamers-overlay">            
                 <div class="container">
                 
@@ -828,54 +906,47 @@
             </div>        
         </section>
         
-        <!-- Games We Play -->
-        <section class="games-we-play">
-            <div class="games-we-play-overlay">
-                <div class="container">
-                
-                    <!-- Section Title -->
-                    <div class="row">
+        <!-- Footer -->
+        <footer class="footer">
+        
+            <div class="container">
+            
+                <div class="row">
+                    
+                    <div class="col-md-6">
                         
-                        <div class="col-md-10 offset-md-1">
+                        <div id="copyright">
+                        
+                            <p>Copyright &copy; 2018 <a href="#"> - DiverseGaming</a></p>
+                        
+                        </div>
+                        
+                    </div>
+                
+                    <div class="col-md-6">
+                    
+                        <div class="social-icons">
+                        
+                            <ul>
+                            
+                                <li><a href="#"><i class="fab fa-twitch"></i></a></li>                               
+                                <li><a href="#"><i class="fab fa-discord"></i></a></li>
+                                <li><a href="#"><i class="fab fa-steam"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
 
-                            <!-- Games We Play Title & Description -->
-                            <div class="section-title">
-
-                                <h2>Games We Play</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ultricies nibh, vitae sodales purus. Aenean volutpat ullamcorper cursus. Duis tristique sit amet augue ac vestibulum.</p>
-
-                            </div>
+                            
+                            </ul>
                             
                         </div>
-                        
-                    </div>
-                                        
-                    <!-- Section Content Images -->
-                    <div class="row">
-                        
-                        <div class="col-md-12">
-                                                        
-                        </div>
-                        
-                    </div>
                     
+                    </div>
                 </div>
-                
-                <div class="container-fluid">
-                                                        
-                    <!-- Section Content Images Row 1-->
-                    <div class="row poster-1">
-                        
-                    </div>  
-                    
-                    <!-- Section Content Images Row 2 -->
-                    <div class="row poster-1">
-                        
-                    </div>
-                    
-                </div>
+            
             </div>
-        </section>
+        
+        </footer>
         
         <!-- Bootstrap Javascript -->
         <script src="js/jquery.js"></script>  
