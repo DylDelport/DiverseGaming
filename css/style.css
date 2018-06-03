@@ -168,7 +168,14 @@ p {
 
 /* ========== About Us ========== */
 .about-us { 
-    background: linear-gradient(#424242, #282828, #424242);
+    background-image: url("../images/dark_gradient.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
 }
 .about-us-item-icon{
     max-width: 65px;  
@@ -312,6 +319,40 @@ p {
     min-height: 300px;
     overflow: hidden;
 }
+.game-overlay:after{
+    content: '';
+    position: absolute;
+    width: 100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.3);
+}
+
+.btn-buygame,
+.btn-buygame:focus,
+.btn-buygame:active,
+.btn-buygame:visited
+{
+    background: rgb(255,255,255, 0.3);
+    border-color: #EE5D28;
+    color: #EE5D28;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;  
+    transition: all 1s;
+}
+.btn-buygame:hover {
+    background-color: #EE5D28;
+    color: #FFFFFF;
+}
 
 @media (max-width: 1200px) {
     .games-list li {
@@ -349,12 +390,14 @@ p {
 
 /* ========== Membership ========== */
 .membership {
-    background: linear-gradient(#424242, #282828, #424242);
-    background-size: cover;
+    background: url("/images/dark_texture.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    -webkit-background-size: cover;    
+    -webkit-background-size: cover; 
 }
 .counter-item {
     font-size: 30px;
@@ -409,7 +452,7 @@ p {
 }
 
 .twitch-live-streamer ul {
-    padding-top: 20px;
+    padding-top: 40px;
     text-align: center;
 }
 .twitch-live-streamer li {

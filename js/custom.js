@@ -9,13 +9,16 @@
 var streamers = ["dunn85", "diversegaminglive", "saltnp3p", "ricksteeletv", "smoggie8", "th3namesbruce", "grandmonktv", "messeh", "taytay61", "webbo231287", "liamh", "dreamtrip", "thisisrich_", "fmginge"];   
 var livestreams = [];
 var streamShowing;
+
 $(function() {
        
     
     streamShowing = false;
     $('#LIVESTREAMS').hide();
+        
+    getOnlineStreamers();
     
-    getOnlineStreamers(); 
+    window.setInterval(getOnlineStreamers, 30000); 
             
     $(".stream").on('click', function(){
         
@@ -80,8 +83,8 @@ function getOnlineStreamers() {
                     livestreams.push(data.stream.channel.name);
                 }
             },
-            complete: function() {
-
+            complete: function() {                    
+                console.log("I've searched for online streamers");
                 if(streamShowing == false) {
                     if (livestreams.length > 0) {
 
